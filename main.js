@@ -1,14 +1,11 @@
-// Handle contact form
-const form = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  formMessage.textContent = "Thanks for reaching out! I'll get back to you soon.";
-  form.reset();
-});
-
-// Scroll to contact section when button clicked
-document.getElementById("contactBtn").addEventListener("click", () => {
-  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
 });

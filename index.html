@@ -3,72 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Anas Javaid | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header>
-    <nav>
-      <h1 class="logo">MyPortfolio</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Anas Javaid</a>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
-    <p>Aspiring Electrical Engineer | Developer | Innovator</p>
-    <button id="contactBtn">Contact Me</button>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am passionate about building projects that combine electronics,
-      programming, and problem-solving. I love working on hardware and
-      software projects and am always eager to learn new technologies.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Emergency Route Planner</h3>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <h2>About Me</h2>
         <p>
-          A tool to optimize evacuation routes during wildfires and flooding.
+          I am an aspiring Electrical Engineer with a passion for robotics,
+          embedded systems, and innovative problem-solving. I enjoy working on
+          projects that combine hardware and software, from RC cars to smart
+          security systems.
         </p>
       </div>
-      <div class="project-card">
-        <h3>RC Car Speed Controller</h3>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience" class="section section-experience">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Controls S</h3>
+        <h4><a href="https://webots.org/" target="_blank">WeBots (Western Robotics Club)</a></h4>
+        <span class="time">2025 – Present</span>
         <p>
-          Built a remote-controlled car with optimized motor speed control.
+          Contributed to robotics development, simulation, algorithm integration, hardware-software interfacing (using Webots simulation environment).
+        </p>
+      </div>
+      <div class="timeline-item">
+        <h3>Electrical Designer</h3>
+        <h4><a href="https://westernaerodesign.com/" target="_blank">Western Aero Design</a></h4>
+        <span class="time">2025 – Present</span>
+        <p>
+          Participated in designing and testing model aircraft, integrating electronics and structure for competitive aero design.
         </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMessage"></p>
-  </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          <div class="project-item">
+            <h3>RC Car</h3>
+            <p>
+              Built a Bluetooth-controlled RC car using Arduino, H-bridge motor
+              driver, and servo for steering. Implemented speed control and
+              battery management for extended use.
+            </p>
+          </div>
+          <div class="project-item">
+            <h3>Safe Security System</h3>
+            <p>
+              Designed an ultrasonic-based door locking mechanism with servo
+              control for smart home security. Integrated distance detection
+              logic to trigger locking automatically.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section section-resume">
+      <div class="container">
+        <h2>Resume</h2>
+        <a href="your_resume.pdf" target="_blank" class="btn">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Thank you for visiting my portfolio! Feel free to reach out through
+          the links below.
+        </p>
+        <p>
+          Email:
+          <a href="mailto:anasjavaid26@gmail.com">anasjavaid26@gmail.com</a><br />
+          GitHub:
+          <a href="https://github.com/anasjavaid26" target="_blank"
+            >github.com/anasjavaid26</a
+          ><br />
+          LinkedIn:
+          <a href="www.linkedin.com/in/anas-javaid-a591a7375" target="_blank"
+            >linkedin.com/in/</a
+          >
+        </p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Your Name. Built with ❤️ and GitHub Pages.</p>
+    <div class="container">
+      <p>© 2025 Anas Javaid. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script src="main.js"></script>
