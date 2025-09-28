@@ -76,6 +76,16 @@ nav .logo {
   color: #ffffff;
 }
 
+.section h2::after {
+  content: "";
+  display: block;
+  width: 1000px;          /* underline length */
+  height: 3px;          /* underline thickness */
+  background-color: #0077cc; /* underline color */
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
 /* About */
 .section-about p {
   font-size: 1.1rem;
@@ -178,5 +188,6 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
 
 
