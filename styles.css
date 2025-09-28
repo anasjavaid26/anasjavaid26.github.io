@@ -103,7 +103,7 @@ nav .logo {
 .timeline-item {
   background: #000000;
   padding: 1.5rem;
-  border-left: 4px solid #0077cc;
+  border-left: 4px solid #cc0000;
   border-radius: 4px;
 }
 
@@ -132,6 +132,7 @@ nav .logo {
 .project-item {
   background-color: #000000;
   padding: 1.5rem;
+  border-left: 4px solid #cc0000;
   border-radius: 6px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
@@ -188,6 +189,7 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
 
 
 
