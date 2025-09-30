@@ -155,6 +155,19 @@ nav .logo {
   color: #ffffff;
 }
 
+.project-link {
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #66b3ff;
+  text-decoration: underline;
+}
+
+
 /* Resume */
 .section-resume .btn {
   display: inline-block;
@@ -193,6 +206,7 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
 
 
 
